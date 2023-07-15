@@ -1,0 +1,563 @@
+* {
+
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    color: whitesmoke;
+    background-image: url('images/backCards.png'), url('images/frontCards.png');
+    background-repeat: no-repeat;
+    background-position: right 110px top -40px, right -100px top -5px;
+    background-size: 34rem, 34rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+
+}
+
+.Hey {
+    margin-bottom: 2rem;
+}
+
+section header,
+section footer,
+nav {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.Para1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 4rem;
+    margin: 4.3rem;
+}
+
+.span {
+    display: inline-block;
+    position: relative;
+}
+
+.span-text {
+    position: absolute;
+    top: 30%;
+    right: -170%;
+    font-weight: bolder;
+    color: white;
+    font-style: normal;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    transform: translate(-40%, -20%);
+}
+
+footer {
+    position: absolute;
+
+    background-color: rgba(255, 228, 196, 0.192);
+    bottom: 0;
+    width: 100%;
+
+}
+
+aside {
+    margin: -2rem 4.3rem;
+}
+
+
+.Para2 {
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 1.25rem;
+    font-style: normal;
+    margin: 4.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Pink {
+    color: rgb(163, 5, 110);
+}
+
+.Logo {
+    float: left;
+    margin-right: 8px;
+    padding-right: 20rem;
+    display: inline-block;
+}
+
+.End {
+    float: right;
+    padding-left: 10rem;
+    z-index: -1;
+}
+
+.columns {
+    column-count: 2;
+    column-rule: 2px solid rgba(255, 255, 255, 0.411);
+    /* position:relative; */
+    font-size: larger;
+
+
+}
+
+.column1 {
+    font-weight: bolder;
+
+}
+
+.column2 {
+
+    margin: 12px;
+    padding: 16px;
+    font-weight: bolder;
+    break-inside: avoid-column;
+
+}
+
+.image-text {
+    position: relative;
+    display: inline-block;
+
+}
+
+.Get {
+    position: absolute;
+    top: 10%;
+    right: -170%;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transform: translate(-30%, -68%);
+    font-weight: bolder;
+}
+
+.im {
+
+    filter: blur(1px);
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    /* Set the border color to transparent */
+    border: 3px pink;
+    background-color: rgb(207, 71, 94);
+}
+
+.arrow {
+    position: absolute;
+    transform: translate(80%, -40%);
+
+    font-size: 100px;
+    /* Adjust the size as needed */
+
+}
+
+.new {
+    padding: 10rem;
+}
+
+.new_container {
+    margin: 4.3rem;
+    position: relative;
+
+}
+
+.new1 {
+    position: absolute;
+    float: left;
+    left: -10rem;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    margin-top: -4rem;
+    gap: 2px;
+    word-spacing: 4.5px;
+}
+
+.new2 {
+    position: absolute;
+    float: right;
+    right: -90px;
+
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 1.25rem;
+    font-style: normal;
+    top: -2rem;
+    word-spacing: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    columns: 3 20px;
+    gap: 2rem;
+    break-inside: avoid;
+    margin-top: 6rem;
+    margin-right: 3rem;
+    margin-left: 8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    transform: translateY(-1rem);
+
+}
+
+.grid1 {
+    background-color: gray;
+    margin-bottom: 8px;
+    transform: scale(10px);
+    height: 260px;
+    break-inside: avoid;
+    break-before: column;
+    text-align: bottom;
+    width: auto;
+    padding: 1rem;
+    background-color: rgba(26, 24, 24, 0.596);
+    border-top: 1px solid gray;
+    border-left: 1px solid rgba(128, 128, 128, 0.74);
+    border-right: 1px solid rgb(182, 173, 173);
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.185);
+}
+
+.grid figcaption {
+    font-size: 1.5rem;
+    margin: 1px;
+}
+
+.grid2 {
+    background-color: rgb(51, 48, 48);
+    height: 260px;
+    break-inside: avoid;
+    break-before: column;
+    text-align: bottom;
+    width: auto;
+    transform: translateY(-2.2rem);
+    padding: 1rem;
+    border-top: 1px solid rgb(170, 155, 155);
+    border-left: 1px solid rgba(80, 73, 73, 0.904);
+    border-right: 1px solid rgba(236, 229, 229, 0.37);
+    border-bottom: 1.5px solid rgba(199, 173, 173, 0.959);
+
+}
+
+.grid3 figure {
+    border: 1rem solid rgb(128, 0, 85);
+}
+
+.grid3 {
+    background-color: rgba(27, 25, 25, 0.555);
+    margin-top: 1rem;
+    height: 260px;
+    border: 5rem rgba(8, 201, 24, 0.877);
+    break-inside: avoid;
+    break-before: column;
+    text-align: bottom;
+    width: auto;
+    padding: 1rem;
+    margin-bottom: 8px;
+    transform: translateY(-1rem);
+    border-top: 1px solid rgb(182, 178, 178);
+    border-left: 1px solid rgba(138, 132, 132, 0.74);
+    border-right: 1px solid rgb(182, 173, 173);
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.185);
+
+}
+
+.whitebg {
+    background-color: rgb(241, 213, 218);
+    text-align: center;
+    display: grid;
+
+    grid-template-columns: repeat(1, 100%);
+    height: 70vw;
+    right: 50rem;
+    background-image: url('./images/VCards.png');
+    background-repeat: no-repeat;
+    background-position: bottom -90px right 160px;
+    background-size: 55rem;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove margins and paddings from parent elements */
+.parent-element {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply box-sizing property */
+.section {
+    box-sizing: border-box;
+    width: 100%;
+    /* Your other styles here */
+}
+
+.uniq {
+    color: rgb(68, 66, 66);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-top: -15rem;
+
+}
+
+.newc {
+    color: rgb(54, 53, 53);
+    font-size: 1.5rem;
+    margin-top: -25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Page4 {
+    height: 49.5vw;
+    padding: 1.5rem;
+
+    text-align: center;
+
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.Newheader {
+    font-size: 3.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bolder;
+    transform: translateY(40px);
+
+}
+
+.Newpara {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgb(117, 109, 109);
+    transform: translateY(60px);
+}
+
+.clear {
+    clear: both;
+}
+
+figure img {
+   
+    height:30px;
+    background-color: black;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2,0.75fr);
+   row-gap: 2rem;
+   column-gap: 1.2rem;
+   grid-auto-rows: max-content;
+   justify-content: space-around;
+   
+
+}
+
+.box {
+
+    background-color: rgb(49, 46, 46);
+    margin:1rem;
+    transform:translateY(-260px);
+    margin-bottom:3rem;
+    text-align:left;
+    height:260px;
+    padding:1rem;
+   margin-right:20px;
+   border-top: 1px solid rgb(182, 178, 178);
+    border-left: 1px solid rgba(138, 132, 132, 0.74);
+    border-right: 1px solid rgb(182, 173, 173);
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.185);
+    width:max(230px,min-content);
+    
+}
+.box1
+{
+    background-color: rgba(94, 88, 88, 0.842);
+}
+.box2
+{
+    background-color: rgb(18, 18, 26);
+}
+.box3
+{
+    background-color: rgb(22, 22, 29);
+}
+.box4
+{
+    background-color: rgb(12, 12, 26);
+}
+figure p{
+    font-size:16px;
+    line-height: 1.5rem;
+}
+.dot
+{
+    
+    color:white;
+    text-align:center;
+  
+   transform:translateY(-300px);
+}
+.kk
+{
+   color:rgba(141, 131, 131, 0.877);
+   font-size:2.25rem;
+   float:right;
+  
+   right:2rem;
+   }
+   
+
+   /* .finale
+   {
+    margin:2rem;
+    padding:3rem;
+    background-image:url('./images/Rectangle\ 6773.png');
+   } */
+   .bef::before
+   {
+    content: '\2014\2014\2014\2014\2014\2014\2014\2014\2014';
+    color:rgb(202, 54, 140);
+
+    background-color: rgb(211, 71, 148);
+    border-radius:12px;
+    height:1px;
+    
+   filter: blur(1px);
+    font-size:1.3rem;
+   }
+   .image-stack {
+    position: relative;
+  }
+  
+  .image-stack img {
+    position: absolute;
+    height:max-content;
+    z-index: 0;
+    transform: translateY(-22rem);
+  }
+  .img1
+  {
+    height:550px;
+  }
+  .image-stack img:nth-child(2) {
+    z-index: 1;
+    height:500px;
+    transform:skewX(7rem);
+    
+    
+  }
+  .black
+  {
+    color:black;
+  }
+  .Hurr
+  {
+    color:white;
+    font-size:3rem;
+    text-align:center;
+    z-index:8;
+    font-weight:bolder;
+  }
+  .hey{
+font-size:1rem;
+color:white;
+  }
+  .image-stack img:nth-child(3) {
+    z-index: 2;
+   margin:4rem;
+ right: -5rem;
+  }
+  
+  .image-stack img:nth-child(4) {
+    z-index: 3;
+    left:0;
+    
+  }
+   /* .img1
+   {
+    height:600px;
+   transform:translateY(-70px);
+   
+   }
+   .img2
+   {
+transform:translateY(-400px);
+transform:scaleY(2rem);
+height:500px;
+
+   } */
+   .newget
+   {
+    font-size:1rem;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+,argin-right:-2px;
+   
+    
+   }
+   .newget::after
+   {
+    content:' \2014\2014>';
+    color:white;
+    font-size:1rem;
+    font-weight: bolder;
+   }
+   .newget::before{
+    content:'\2014\2014\2014';
+    background-color: rgb(230, 77, 179);
+    font-size:1.5rem;
+    filter:blur(1px);
+    color:transparent;
+    transform:translateX(1rem);
+    margin-right:-3px;
+    z-index:1;
+   }
+   .Last
+   {
+    padding:18rem;
+    color:white;
+    font-size:1rem;
+    height:5vw;
+    
+   }
+   .last{
+    float: left;
+    margin-right:2rem;
+    padding-right: 10rem;
+    display: inline-block;
+    transform:translateX(-10rem);
+   }
+   .Last nav{
+    display:flex;
+    justify-content:flex-end;
+    gap:1rem;
+   }
+   ul{
+    list-style-type: none;
+    
+   }
+   
